@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs')  %>
+<body class="body">
+    <%- include('../partials/nav.ejs')  %>
+
+    <div class="main-content-display">
+        <h2>All Content</h2>
+        <hr>
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+
+                <h2>Heading: <%= blog.title %></h2>
+                <p>Message: <%= blog.content %></p>
+                <span>Created Date: <%= blog.date %></span>
+
+            <% }) %>
+        <% } else { %>
+            <h3>There is no content to display</h3>
+        <% } %>
+    </div>
+    <br>
+
+    <%- include('../partials/footer.ejs')  %>
+</body>
+</html>

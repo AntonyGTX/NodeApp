@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs')  %>
+<body>
+    <%- include('../partials/nav.ejs')  %>
+
+    <div class="form-content">
+        <form action="" class="form">
+            <div class="titleDv"> 
+                <label for="title">Content-title</label>
+                <input type="text" id="title" required >
+            </div>
+            <div class="subHeader">
+                <label for="title">Content-snippet</label>
+                <input type="text" id="snippet" required >
+            </div>
+            <div class="textArea">
+                <label for="title">Content-body</label>
+                <textarea name="body" id="body"></textarea>
+            </div>
+            <div class="button-container">
+                <button>submit</button>
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <%- include('../partials/footer.ejs')  %>
+</body>
+</html>
